@@ -1,17 +1,43 @@
-#assignment 1-3
-age = int(14)
-height = float(5.583)
-complex = (2j)
+#exercise 1
+string = ['Thirty', 'Days', 'Of', 'Python']
+string = " ".join(string)
+print(string)
 
-#assignment 4
-Base = float(input("Enter base: "))
-Height = float(input("Enter height: "))
-Area = 0.5*Base*Height
-print(f"The area of the triangle is{Area}")
+#exercise 2
+strin = ['Coding', 'For' , 'All']
+strin = " ".join(strin)
+print(str)
 
-#assignment 5
-a = float(input("Enter side a: "))
-b = float(input("Enter side b: "))
-c = float(input("Enter side c: "))
-P = a + b + c
-print(f"The perimeter of the triangle is {P}")
+#exercise 3
+stri = "Coding For All"
+stri = stri.split()
+print(stri)
+print(len(stri))
+stri = " ".join(stri)
+print(stri.upper())
+print(stri.lower())
+
+#exercise 8
+print(stri.title())
+slice = stri[:6]
+print(slice)
+found = stri.find("Coding")
+print(found)
+
+#exercise 11
+new = stri.replace("Coding", "Python")
+new = stri.replace("All", "Everyone")
+stri.split(" ")
+print(stri)
+
+print(stri[0])
+print(stri[-1])
+print(stri[10])
+
+#exercise 18
+words = stri.split()
+acronym = "".join(word[0].upper() for word in words)
+print(acronym)
+
+print(stri.index("C"))
+print(stri.rfind("l"))
