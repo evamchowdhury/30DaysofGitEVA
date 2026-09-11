@@ -14,3 +14,24 @@ intercept = A.intersection(B)
 print(intercept)
 print(A.issubset(B))
 print(A.isdisjoint(B))
+
+BA = B.union(A)
+sym = B.symmetric_difference(A)
+print(sym)
+
+age_set = set(age)
+print(len(age), len(set))
+#str: made with "", 1 value
+#list: multiple values together, ordered, changable, []
+#set: unordered, values are all unique {}
+#tuple: ordered sequences; cannot be changed
+
+str = "I am a teacher and I love to inspire and teach people."
+str_list = text(str)
+str_set = set(str_list)
+
+half_set = len(str_list)//2
+set_a = set(str_list[:half_set])
+set_b = set(str_list[half_set:])
+dif = set_b.symmetric_difference(set_a)
+print(dif)
