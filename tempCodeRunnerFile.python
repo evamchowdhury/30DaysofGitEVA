@@ -1,0 +1,19 @@
+fruits = ['banana', 'pear', 'apple']
+def print_capitalized(list):
+    for word in list:
+        print(word.upper(), end=", ")
+
+print_capitalized(fruits)
+
+
+def add_item(list, addition):
+    list.append(addition)
+    print(list)
+
+add_item(fruits, "cherry")
+
+def remove_item(list, remove):
+    list.remove(remove)
+    print(list)
+
+remove_item(fruits, "pear")
