@@ -63,3 +63,9 @@ def remove_item(list, remove):
     print(list)
 
 remove_item(fruits, "pear")
+
+def sum_of_numbers(numbers):
+    total =+ numbers
+    print(total)
+
+print(sum_of_numbers(10))
