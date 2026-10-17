@@ -1,5 +1,4 @@
-def sum_of_numbers(numbers):
-    total =+ numbers
-    print(total)
-
-print(sum_of_numbers(10))
+def show_args(name, age, city):
+    print(f"name: {name} age:{age}, city{city}")
+    
+show_args(name="Alice", age=30, city="New York")
