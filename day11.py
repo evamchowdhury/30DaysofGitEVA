@@ -164,7 +164,7 @@ def calculate_mean(list):
     return mean
     
     
-print(calculate_mean(numbers))
+
 
 
 def calculate_median(list):
@@ -174,11 +174,9 @@ def calculate_median(list):
     median = list[pos]
     return median
 
-print(calculate_median(numbers2))
 
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9]
-numbers2 = [23, 1, 42, 15, 28]
+
 
 def calculate_range(list):
     list = sorted(list)
@@ -187,7 +185,7 @@ def calculate_range(list):
     range = max - min
     return range
 
-print(calculate_range(numbers2))
+
 
 def greet(name=None):
     if not name:
@@ -203,3 +201,50 @@ def show_args(name, age, city):
     print(f"name: {name} age:{age}, city{city}")
     
 show_args(name="Alice", age=30, city="New York")
+
+
+def is_prime(number):
+    for num in range(2, int(number**0.5)+1):
+        if number % num ==0:
+            return False
+    return True
+
+def is_unique(list):
+    seen = {}
+    for things in list:
+        if things in seen:
+            return True
+    seen[things] = True
+    return False
+
+def unique_data(list):
+    seen = {}
+    for i in list:
+        if type(i) in seen:
+            return True
+        seen[i] = True
+    return False
+
+def type_data(list):
+    if not lst:
+        return True
+    
+    first_type = type(list[0])
+    for item in list:
+        if type(item) != first_type:
+            return False
+    return True
+
+
+def most_spoken_languages(countries):
+    languages = []
+    for country in countries:
+        languages.extend(country.get("languages", []))
+    counts = {}
+    for language in languages:
+        counts[language] = counts.get(language, 0) +1
+        if len(counts) == 10:
+            break
+    return sorted(list(counts), reverse=True)
+
+print(most_spoken_languages(sample))
